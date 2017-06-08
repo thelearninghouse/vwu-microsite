@@ -1,0 +1,294 @@
+/*************************
+PAGE SPECIFIC STYLES
+*************************/
+.page-header__title,
+.post-header__title,
+.single-header__title {
+	margin: 0;
+}
+
+.page {
+	main {
+		padding: 2em 0 0;
+		position: relative;
+	}
+
+	.form__wrapper,
+	.info {
+		padding: 0 1em;
+		@include susy-breakpoint($bp-med) {
+			 @include span(6)
+		}
+	}
+
+	.form__wrapper {
+		padding: 1em;
+	}
+
+	.info {
+		padding-right: 2em;
+
+		&__heading {
+			text-transform: uppercase;
+		}
+
+		a {
+			color: white;
+			text-decoration: underline;
+		}
+	}
+
+	.form__wrapper {
+		@include susy-breakpoint($bp-med) {
+			 @include span(6 last)
+		}
+	}
+
+	.degrees {
+		margin-top: 5em;
+
+		.degree {
+			border-bottom: 8px solid #00acc8;
+			background: rgba(0, 172, 200, 0.47);
+			padding: 0.5em 2em 1.5em;
+			margin-bottom: 2em;
+			background: rgba(97, 148, 185, 0.57);
+
+			&__title {
+				font-weight: 900;
+				font-family: 'Roboto';
+				margin-top: 0.5em;
+				margin-bottom: 0;
+			}
+
+			p {
+				font-size: 1.2em;
+				line-height: 1.6;
+				margin-top: 0.5em;
+			}
+		}
+	}
+
+	.white {
+		background: white;
+		padding: 4em 0;
+		position: relative;
+
+		@include susy-breakpoint($bp-med) {
+		    padding: 8em 0;
+		}
+		&:before {
+			background-image: url("/wp-content/themes/vwu-microsite/library/images/wave-bottom.svg");
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: -15px;
+			width: 104%;
+			top: -5px;
+			background-repeat: no-repeat;
+		}
+	}
+
+	.valueProps {
+		&__wrapper {
+			display: flex;
+			flex-flow: row wrap;
+			align-content: space-around;
+			justify-content: space-around;
+		}
+	}
+
+	.valueProp {
+		text-align: center;
+
+		margin: 0;
+		padding: 1.5em;
+		border-bottom: 1px solid $gray;
+
+		&:last-of-type {
+			border: none;
+		}
+		@include susy-breakpoint($bp-med) {
+		    flex-basis: 50%;
+		}
+
+		img {
+			max-height: 80px;
+		}
+
+		&__headline h4 {
+			color: #0087A6;
+		}
+
+		&__description {
+			color: #333;
+		}
+	}
+
+	.accolades {
+		display: flex;
+		justify-content: center;
+		padding: 2em 1em 3em;
+
+		&__item {
+			flex: 1 1 auto;
+			flex-basis: 60%;
+			text-align: center;
+		}
+	}
+
+	.waveTop {
+		position: absolute;
+		width: 100%;
+		height: 13vw;
+		background-image: url("/wp-content/themes/vwu-microsite/library/images/wave-top2.svg");
+		background-repeat: no-repeat;
+		bottom: 100%;
+		z-index: 99999;
+		left: 0;
+		right: 0;
+		background-size: cover;
+		background-position: bottom;
+	}
+
+	.waveBottom {
+		position: absolute;
+		width: 100%;
+		height: 13vw;
+		background-image: url("/wp-content/themes/vwu-microsite/library/images/wave-bottom.svg");
+		background-repeat: no-repeat;
+		bottom: 0;
+		z-index: 99999;
+		left: 0;
+		right: 0;
+		background-size: cover;
+		background-position: bottom;
+	}
+
+	.stats {
+		padding: 3em 0;
+		@include susy-breakpoint($bp-med) {
+			padding: 8em 0;
+		}
+
+		&__wrapper {
+			display: flex;
+			justify-content: space-between;
+			text-align: center;
+			flex-flow: row wrap;
+
+			.stat {
+				flex: 1 1 0;
+				padding: 0.5em 1em;
+				background: #ececec;
+				margin: 1em;
+				@include susy-breakpoint($bp-med) {
+					padding: 1em 2em;
+					margin: 0 2em;
+				}
+
+				&__number {
+					font-weight: 900;
+					color: #0087a6;
+					font-size: 2em;
+					margin: 0;
+					@include susy-breakpoint($bp-med) {
+						font-size: 3em;
+					}
+				}
+
+				&__text {
+					display: block;
+					font-weight: 500;
+					margin-top: 0.5em;
+				}
+			}
+		}
+		// @include susy-breakpoint($bp-med) {
+		// 	.stat {
+		// 		background: #ececec;
+		// 		margin: 0 2em;
+		// 	}
+		// }
+	}
+
+	.info {
+		padding-bottom: 5em;
+	}
+
+	.why {
+		.paragraphHeader {
+			margin-bottom: 0;
+			margin-top: 2em;
+		}
+	}
+	// valueProp__headline
+}
+
+
+// Value Props Test
+.page {
+
+	@include susy-breakpoint($bp-med) {
+		.sect-valu-item {
+	 		border-bottom: solid 1px $gray;
+	 		display: block;
+	 		padding: 2em;
+	 		text-align: center;
+
+	 		&:last-child {
+	 			border-bottom: none;
+	 		}
+
+	 		h4 {
+	 			color: $highlight;
+	 			font-weight: bold;
+	 			text-transform: uppercase;
+	 			font-size: 1.65em;
+	 			font-family: $serif;
+	 		}
+
+	 		img {
+	 			max-height: 80px;
+	 		}
+	 	}
+	 	.sect-valu-item {
+	 		display: block;
+	 		padding: 2em;
+	 		text-align: center;
+	 		width: 50%;
+	 		float: left;
+	 		border: solid 1px $white;
+	 		min-height: 396px;
+	 	}
+
+	 	.sect-valu-item:nth-child(1) {
+	 		border-bottom: solid 1px $gray;
+	 		border-right: solid 1px $gray;
+	 	}
+	 	//job
+
+	 	.sect-valu-item:nth-child(2) {
+	 		// border-right: solid 1px $gray;
+	 		border-bottom: solid 1px $gray;
+	 	}
+	 	//faculty
+
+	 	.sect-valu-item:nth-child(3) {
+	 		border-right: solid 1px $gray;
+	 		// border-bottom: solid 1px $gray;
+	 	}
+	 	//credit
+
+	 	.sect-valu-item:nth-child(4) {
+	 		// border-right: solid 1px $gray;
+	 		border-bottom: solid 1px $white;
+	 	}
+
+	 	.sect-valu-item:nth-child(5) {
+	 		border-right: solid 1px $white;
+	 		border-bottom: solid 1px $white;
+	 	}
+	}
+
+}

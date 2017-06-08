@@ -1,0 +1,34 @@
+.home .hero {
+	// background-image: url(/wp-content/themes/vwu-microsite/library/images/home.jpg)
+}
+
+.page-id-68 {}
+
+.hero {
+	&__headline {
+		text-transform: uppercase;
+		padding: 1em 0 4em;
+		font-weight: 700;
+		font-size: 2em;
+		@include susy-breakpoint($bp-med) {
+			font-size: 2.5em;
+      padding: 2em 0 5em;
+		}
+		@include susy-breakpoint($bp-lg) {
+			font-size: 3em;
+			padding: 4em 0 7em;
+		}
+
+		.large {
+			display: block;
+			font-size: 2em;
+			@include susy-breakpoint($bp-med) {
+				// font-size: 2.5em;
+			}
+			@include susy-breakpoint($bp-lg) {
+				font-size: 2.5em;
+				// padding: 4em 0 7em;
+			}
+		}
+	}
+}

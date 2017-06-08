@@ -1,0 +1,32 @@
+.requestInfoButton {
+	background: $cyan;
+	color: white;
+	// font-size: 2em;
+	border: none;
+	// padding: .5em 1em;
+  position: relative;
+	margin-left: 1em;
+	text-transform: uppercase;
+	transition: all 0.25s ease;
+
+	&:focus,
+	&:hover {
+		background: $darkCyan;
+	}
+}
+
+.requestOptions {
+	position: absolute;
+	font-size: 0.5em;
+	padding-left: 0;
+	text-align: left;
+	background: rgba(97,148,185,.57);
+	width: 100%;
+	padding: 0.5em;
+	box-sizing: border-box;
+  display: none;
+
+  a {
+    text-align: left;
+  }
+}

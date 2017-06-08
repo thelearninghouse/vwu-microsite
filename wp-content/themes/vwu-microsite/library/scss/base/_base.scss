@@ -1,0 +1,73 @@
+/*********************
+GENERAL STYLES
+*********************/
+
+html > * {
+	box-sizing: border-box;
+}
+
+div, fieldset {
+	box-sizing: border-box !important;
+}
+body {
+	// font-family: 'Oswald', Cambria, Times New Roman, Times, serif !important;
+	font-size: 100%;
+	line-height: 1.5;
+	color: $text-color;
+	background-color: white;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	// margin: 0;
+	overflow-x: hidden;
+}
+
+// Display fonts when ready
+.fonts-loaded body {
+    font-family: $sans-serif;
+}
+
+// Styled box with a border
+.border {
+    border: 2px solid $link-color;
+    padding: .5em 1em;
+}
+
+.content {
+	margin: 1.5em 0;
+
+}
+
+/* /////////////////////////////////////////////////////////////////////
+Start of Dev Styles
+///////////////////////////////////////////////////////////////////// */
+
+body {
+	color: white;
+  // background: #004778; // Invision
+	background: $someBlue;
+	&:not(p) {
+		font-family: 'Oswald', Cambria, Times New Roman, Times, serif !important;
+		margin: 0;
+	}
+}
+
+p {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+.content {
+	margin: 0;
+}
+
+.footer a {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+.sr-only
+{position:absolute;
+display: block;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;}

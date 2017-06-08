@@ -1,0 +1,73 @@
+.form {
+	&__wrapper {
+		background-color: $highlight;
+		font-family: $sans-serif;
+	  padding: 1em 1em;
+		form {
+			max-width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+
+			label {
+				margin-top: 1.5em;
+				display: block;
+			}
+
+			.legal-text {
+				box-sizing: border-box;
+				max-width: 600px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+		input,
+		input[type],
+		select,
+		textarea {
+			background: white;
+			border: white;
+		}
+
+		input[type=submit] {
+			background: $blue;
+			max-width: 360px;
+			display: block;
+			text-transform: uppercase;
+			font-family: $serif;
+			font-size: 1.5em;
+			margin: 3em auto 2.5em;
+		}
+	}
+
+	&__heading {
+		text-align: center;
+		text-transform: uppercase;
+		font-family: $serif;
+		margin-bottom: 0;
+		font-size: 3em;
+	}
+
+	&__description {
+		text-align: center;
+		margin-bottom: 2em;
+	}
+}
+
+fieldset {
+	display: block;
+	-webkit-margin-start: 2px;
+	-webkit-margin-end: 2px;
+	-webkit-padding-before: 0.35em;
+	-webkit-padding-start: 0.75em;
+	-webkit-padding-end: 0.75em;
+	-webkit-padding-after: 0.625em;
+	// border: 2px groove threedface;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	min-width: -webkit-min-content;
+	min-width: 0;
+}
