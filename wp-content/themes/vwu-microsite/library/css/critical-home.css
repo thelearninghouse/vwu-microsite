@@ -506,3 +506,6 @@ LAYOUT & GRID STYLES
   margin: 0 auto; }
 
 /**** 768px and Up ****/
+.content {
+  position: relative;
+  top: 1px; }

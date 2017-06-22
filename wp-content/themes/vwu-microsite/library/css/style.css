@@ -1032,9 +1032,19 @@ th {
   width: 100%;
   padding: 0.5em;
   box-sizing: border-box;
-  display: none; }
-  .requestOptions a {
-    text-align: left; }
+  display: none;
+  background: white; }
+  .requestOptions li {
+    width: 100% !important;
+    font-size: .8em  !important; }
+    @media (min-width: 840px) {
+      .requestOptions li {
+        font-size: 1em; } }
+    .requestOptions li a {
+      text-align: left;
+      color: #003861 !important;
+      text-transform: capitalize !important;
+      font-size: 3em !important; }
 
 /*********************
 IMPORTING PARTIALS
@@ -1392,6 +1402,10 @@ LAYOUT & GRID STYLES
   margin: 0 auto; }
 
 /**** 768px and Up ****/
+.content {
+  position: relative;
+  top: 1px; }
+
 /*************************
 HOMEPAGE SPECIFIC STYLES
 *************************/
@@ -1437,6 +1451,12 @@ HOMEPAGE SPECIFIC STYLES
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     text-transform: uppercase; }
+  .home .view a {
+    color: white;
+    transition: all .15s ease-in-out; }
+    .home .view a:hover, .home .view a:focus {
+      text-decoration: underline;
+      font-weight: 600; }
   .home .view__info {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%; }

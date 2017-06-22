@@ -5,21 +5,59 @@
 /*
  * Put all your regular jQuery in here.
 */
+
+(function($){
+	if(location.hash){
+		$(window).scrollTop(0); //stop jump to hash straight away
+		setTimeout(function(){
+			//stop jump to hash again a bit later
+			//for browser compatibility
+			$(window).scrollTop(0);
+		},1);
+	}
+	$(window).load(function(){
+		if(location.hash){
+			setTimeout(function(){
+				//use page scroll to id scrollTo method
+				//to animate page to location hash
+
+        // var form = $(location.hash)
+        // console.log(form);
+        // window.scrollTo(0, 0);
+
+        $('html, body').animate({
+           scrollTop: $(location.hash).offset().top - 80
+         }, 800, function(){
+
+           // Add hash (#) to URL when done scrolling (default click behavior)
+          //  window.location.hash = hash;
+          console.log('made it!');
+         });
+        // $.mPageScroll2id("scrollTo",location.hash);
+			}, 250);
+		}
+	});
+})(jQuery);
+
+
 jQuery(document).ready(function($) {
 var requestInfoItem = $('.requestInfoButton');
 var requestInfoLink = $('.requestInfoButton > a');
-var requestOptionsHTML = '<ul class="requestOptions"><li><a href="/campus-degrees">Request Info - Campus</a></li> <li><a href="/online-degrees">Request Info - Online</a></li></ul>';
+var requestOptionsHTML = '<ul class="requestOptions"><li><a href="/campus-degrees#requestInfoForm">Campus Degrees</a></li> <li><a href="/online-degrees#requestInfoForm">Online Degrees</a></li></ul>';
 
-  if (window.location.href.indexOf("degrees") > -1) {
+  if (window.location.href.indexOf("campus") > -1 || window.location.href.indexOf("online") > -1) {
     requestInfoLink.attr("href", "#requestInfoForm" );
-
+			console.log('If ran');
   } else {
+		console.log('Else ran');
+
     requestInfoItem.append(requestOptionsHTML)
     requestInfoLink.on('click', function(clickEvent) {
       clickEvent.preventDefault();
       $(this).next('.requestOptions').slideToggle()
     })
   }
+
 
   // if (window.location.href.indexOf("degrees") == -1) {
   //   console.log('fire here');

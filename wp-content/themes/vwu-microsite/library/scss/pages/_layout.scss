@@ -21,3 +21,9 @@ LAYOUT & GRID STYLES
 	}
 
 }
+
+// NOTE: This is to fix the issues of the line below hero image
+.content {
+	position: relative;
+	top: 1px;
+}

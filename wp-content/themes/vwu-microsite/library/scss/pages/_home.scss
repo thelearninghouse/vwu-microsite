@@ -48,6 +48,14 @@ HOMEPAGE SPECIFIC STYLES
 			flex-basis: 100%;
 			text-transform: uppercase;
 		}
+		a {
+			color: white;
+			transition: all .15s ease-in-out;
+			&:hover, &:focus {
+				text-decoration: underline;
+				font-weight: 600;
+			}
+		}
 
 		&__info {
 			flex-basis: 100%;
