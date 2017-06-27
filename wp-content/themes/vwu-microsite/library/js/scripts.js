@@ -2,39 +2,6 @@
  * Put all your regular jQuery in here.
 */
 
-(function($){
-	if(location.hash){
-		$(window).scrollTop(0); //stop jump to hash straight away
-		setTimeout(function(){
-			//stop jump to hash again a bit later
-			//for browser compatibility
-			$(window).scrollTop(0);
-		},1);
-	}
-	$(window).load(function(){
-		if(location.hash){
-			setTimeout(function(){
-				//use page scroll to id scrollTo method
-				//to animate page to location hash
-
-        // var form = $(location.hash)
-        // console.log(form);
-        // window.scrollTo(0, 0);
-
-        $('html, body').animate({
-           scrollTop: $(location.hash).offset().top - 80
-         }, 800, function(){
-
-           // Add hash (#) to URL when done scrolling (default click behavior)
-          //  window.location.hash = hash;
-          console.log('made it!');
-         });
-        // $.mPageScroll2id("scrollTo",location.hash);
-			}, 250);
-		}
-	});
-})(jQuery);
-
 
 jQuery(document).ready(function($) {
 var requestInfoItem = $('.requestInfoButton');
@@ -50,7 +17,7 @@ var requestOptionsHTML = '<ul class="requestOptions"><li><a href="/campus-degree
     requestInfoItem.append(requestOptionsHTML)
     requestInfoLink.on('click', function(clickEvent) {
       clickEvent.preventDefault();
-      $(this).next('.requestOptions').slideToggle()
+      $(this).next('.requestOptions').toggleClass('active').slideToggle();
     })
   }
 
@@ -113,4 +80,66 @@ var requestOptionsHTML = '<ul class="requestOptions"><li><a href="/campus-degree
     });
 
 
+}); /* end of as page load scripts */
+
+
+jQuery(document).ready(function($) {
+
+	var Button = $('.requestInfoButton').first();
+ 	var Menu = Button.children('ul');
+
+	Button
+		.on('mouseenter focusin', function(e) {
+			// NOTE: Add accesibility functionality
+
+		})
+		.on('mouseleave focusout', function(e) {
+
+			setTimeout(function() {
+				if (Button.find(':focus').length) {
+					// Still in submenu
+				} else {
+
+					Button.attr('data-has-focus', 'false')
+
+					if (Menu.hasClass('active')) {
+						Menu
+							.slideToggle()
+							.toggleClass('active')
+					}
+				}
+			}, 100);
+		});
+
+
+	if(location.hash){
+		$(window).scrollTop(0); //stop jump to hash straight away
+		setTimeout(function(){
+			//stop jump to hash again a bit later
+			//for browser compatibility
+			$(window).scrollTop(0);
+		},1);
+	}
+	$(window).load(function(){
+		if(location.hash){
+			setTimeout(function(){
+				//use page scroll to id scrollTo method
+				//to animate page to location hash
+
+        // var form = $(location.hash)
+        // console.log(form);
+        // window.scrollTo(0, 0);
+
+        $('html, body').animate({
+           scrollTop: $(location.hash).offset().top - 80
+         }, 800, function(){
+
+           // Add hash (#) to URL when done scrolling (default click behavior)
+          //  window.location.hash = hash;
+          console.log('made it!');
+         });
+        // $.mPageScroll2id("scrollTo",location.hash);
+			}, 250);
+		}
+	});
 }); /* end of as page load scripts */

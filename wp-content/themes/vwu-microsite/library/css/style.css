@@ -1390,11 +1390,12 @@ PAGE NAVI STYLES
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   padding: 1em 1em; }
   .form__wrapper form {
-    max-width: 600px;
+    max-width: 550px;
     margin-left: auto;
     margin-right: auto; }
     .form__wrapper form label {
       margin-top: 1.5em;
+      margin-bottom: .3em;
       display: block; }
     .form__wrapper form .legal-text {
       box-sizing: border-box;

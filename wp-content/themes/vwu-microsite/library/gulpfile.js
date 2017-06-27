@@ -11,6 +11,7 @@ var pngquant = require('imagemin-pngquant');
 var browserSync = require('browser-sync').create();
 var gutil = require('gulp-util');
 var rename = require('gulp-rename');
+var plumber = require('gulp-plumber');
 
 var paths = {
   sass: {
@@ -50,6 +51,7 @@ gulp.task('sass', function() {
 // CONCAT JS FILES
 gulp.task('scripts', function() {
   return gulp.src(paths.scripts.src)
+    .pipe(plumber())
     .pipe(concat('production.js'))
     .pipe(gulp.dest(paths.scripts.dest))
     .pipe(uglify())
