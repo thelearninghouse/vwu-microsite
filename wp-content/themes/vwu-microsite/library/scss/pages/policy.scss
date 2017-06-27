@@ -1,0 +1,17 @@
+.privacy {
+	&.content {
+		position: relative;
+		top: 1px;
+    padding: 1.5em 0;
+    background: #fefefe;
+    color: initial;
+	}
+
+  .wrap {
+    max-width: 1000px;
+  }
+
+  .page-header__title, .post-header__title, .single-header__title {
+    color: initial;
+  }
+}

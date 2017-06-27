@@ -45,7 +45,7 @@ PAGE SPECIFIC STYLES
 	}
 
 	.degrees {
-		margin-top: 5em;
+    margin-top: 3em;
 
 		.degree {
 			border-bottom: 8px solid #00acc8;
@@ -168,7 +168,7 @@ PAGE SPECIFIC STYLES
 	.stats {
 		padding: 3em 0;
 		@include susy-breakpoint($bp-med) {
-			padding: 8em 0;
+			padding: 6em 0 2em;
 		}
 
 		&__wrapper {
@@ -182,9 +182,13 @@ PAGE SPECIFIC STYLES
 				padding: 0.5em 1em;
 				background: #ececec;
 				margin: 1em;
+
+				padding: 2em 2em;
+				    margin: 1em;
+				    font-size: 2em;
 				@include susy-breakpoint($bp-med) {
-					padding: 1em 2em;
-					margin: 0 2em;
+					// padding: 1em 2em;
+					// margin: 0 2em;
 				}
 
 				&__number {
@@ -194,6 +198,7 @@ PAGE SPECIFIC STYLES
 					margin: 0;
 					@include susy-breakpoint($bp-med) {
 						font-size: 3em;
+						font-size: 4em;
 					}
 				}
 
@@ -201,6 +206,7 @@ PAGE SPECIFIC STYLES
 					display: block;
 					font-weight: 500;
 					margin-top: 0.5em;
+					color: #0087a6;
 				}
 			}
 		}

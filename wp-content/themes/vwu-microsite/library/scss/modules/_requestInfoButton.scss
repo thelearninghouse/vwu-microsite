@@ -29,7 +29,7 @@
 
 	li {
 		width: 100% !important;
-		font-size: .8em  !important;
+		font-size: .8em;
 
 		@include susy-breakpoint($bp-med) {
 		    font-size: 1em;

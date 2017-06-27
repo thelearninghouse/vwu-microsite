@@ -1004,7 +1004,7 @@ th {
   @media (min-width: 1240px) {
     .hero__headline {
       font-size: 3em;
-      padding: 4em 0 7em; } }
+      padding: 4em 0 5em; } }
   .hero__headline .large {
     display: block;
     font-size: 2em; }
@@ -1036,7 +1036,7 @@ th {
   background: white; }
   .requestOptions li {
     width: 100% !important;
-    font-size: .8em  !important; }
+    font-size: .8em; }
     @media (min-width: 840px) {
       .requestOptions li {
         font-size: 1em; } }
@@ -1064,6 +1064,53 @@ HEADER STYLES
   .header__nav.visible {
     visibility: visible;
     height: auto; }
+  .header__nav .menu-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto; }
+    .header__nav .menu-item:after {
+      background: transparent;
+      content: '';
+      position: absolute;
+      height: 4px;
+      left: 5%;
+      width: 90%;
+      bottom: 15px;
+      transition: .25s ease; }
+    .header__nav .menu-item:hover a {
+      text-decoration: none !important; }
+  .header__nav .menu-item:not(.current-menu-item):hover:after {
+    background: white;
+    background: #00d0f8;
+    content: '';
+    position: absolute;
+    height: 4px;
+    left: 5%;
+    width: 90%;
+    bottom: 15px; }
+  @media (min-width: 840px) {
+    .header__nav .menu-item.requestInfoButton {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0 auto;
+              flex: 1 0 auto;
+      width: 220px; } }
+  .header__nav .menu-item.requestInfoButton:hover:after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    background: white;
+    bottom: 0;
+    width: 100%;
+    left: 0; }
+  .header__nav .current-menu-item:after {
+    background: #00a5c5;
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: 5%;
+    width: 90%;
+    bottom: 15px; }
 
 /* /////////////////////////////////////////////////////////////////////
 Start of Dev Styles
@@ -1144,9 +1191,15 @@ Start of Dev Styles
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; } }
+    .header .navWrapper .requestInfoButton li {
+      margin: .5em 0; }
     @media (min-width: 840px) {
       .header .navWrapper .requestInfoButton {
-        display: block; } }
+        display: block; }
+        .header .navWrapper .requestInfoButton li {
+          margin: 1em 0; }
+          .header .navWrapper .requestInfoButton li:first-of-type {
+            margin-top: .5em; } }
 
 .header .logo__wrapper {
   -webkit-box-flex: 1;
@@ -1179,7 +1232,7 @@ Start of Dev Styles
     .header .navWrapper .nav li {
       text-align: center; }
       .header .navWrapper .nav li.requestInfoButton a {
-        padding: .25em .5em; }
+        padding: 0.25em 0.5em; }
       .header .navWrapper .nav li:hover a {
         text-decoration: underline; }
 
@@ -1417,7 +1470,7 @@ HOMEPAGE SPECIFIC STYLES
   position: relative; }
 
 .home .intro {
-  padding: 5em 0; }
+  padding: 2.5em; }
   .home .intro .wrap {
     max-width: 1000px; }
   .home .intro__heading {
@@ -1567,7 +1620,7 @@ PAGE SPECIFIC STYLES
     margin-right: 0; } }
 
 .page .degrees {
-  margin-top: 5em; }
+  margin-top: 3em; }
   .page .degrees .degree {
     border-bottom: 8px solid #00acc8;
     background: rgba(0, 172, 200, 0.47);
@@ -1678,7 +1731,7 @@ PAGE SPECIFIC STYLES
   padding: 3em 0; }
   @media (min-width: 840px) {
     .page .stats {
-      padding: 8em 0; } }
+      padding: 6em 0 2em; } }
   .page .stats__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1697,11 +1750,10 @@ PAGE SPECIFIC STYLES
               flex: 1 1 0;
       padding: 0.5em 1em;
       background: #ececec;
-      margin: 1em; }
-      @media (min-width: 840px) {
-        .page .stats__wrapper .stat {
-          padding: 1em 2em;
-          margin: 0 2em; } }
+      margin: 1em;
+      padding: 2em 2em;
+      margin: 1em;
+      font-size: 2em; }
       .page .stats__wrapper .stat__number {
         font-weight: 900;
         color: #0087a6;
@@ -1709,11 +1761,13 @@ PAGE SPECIFIC STYLES
         margin: 0; }
         @media (min-width: 840px) {
           .page .stats__wrapper .stat__number {
-            font-size: 3em; } }
+            font-size: 3em;
+            font-size: 4em; } }
       .page .stats__wrapper .stat__text {
         display: block;
         font-weight: 500;
-        margin-top: 0.5em; }
+        margin-top: 0.5em;
+        color: #0087a6; }
 
 .page .info {
   padding-bottom: 5em; }
@@ -1799,6 +1853,19 @@ POST STYLES
 /* end .entry-content */
 .tags {
   margin: 0; }
+
+.privacy.content {
+  position: relative;
+  top: 1px;
+  padding: 1.5em 0;
+  background: #fefefe;
+  color: initial; }
+
+.privacy .wrap {
+  max-width: 1000px; }
+
+.privacy .page-header__title, .privacy .post-header__title, .privacy .single-header__title {
+  color: initial; }
 
 /*********************
 PRINT

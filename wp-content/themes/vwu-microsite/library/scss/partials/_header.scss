@@ -4,7 +4,6 @@ HEADER STYLES
 .header {
 	&__logo {
 		margin: 0.75em 0;
-
 	}
 
 	&__nav {
@@ -16,25 +15,80 @@ HEADER STYLES
 			visibility: visible;
 			height: auto;
 		}
+
+		.menu-item {
+			flex: 1 1 auto;
+
+			&:after {
+				background: transparent;
+				content: '';
+				position: absolute;
+				height: 4px;
+				left: 5%;
+				width: 90%;
+				bottom: 15px;
+				transition: .25s ease;
+			}
+
+			&:hover a {
+				text-decoration: none !important;
+			}
+		}
+
+
+		.menu-item:not(.current-menu-item):hover:after {
+			background: white;
+			background: lighten(#00a5c5, 10%);
+			content: '';
+			position: absolute;
+			height: 4px;
+			left: 5%;
+			width: 90%;
+			bottom: 15px;
+		}
+		.menu-item.requestInfoButton {
+
+			@include susy-breakpoint($bp-med) {
+				flex: 1 0 auto;
+				width: 220px;
+			}
+
+			&:hover:after {
+				content: '';
+				position: absolute;
+				height: 4px;
+				background: white;
+		    bottom: 0;
+		    width: 100%;
+		    left: 0;
+			}
+		}
+
+		.current-menu-item:after {
+			background: #00a5c5;
+			content: '';
+			position: absolute;
+			height: 4px;
+			width: 100%;
+			left: 5%;
+			width: 90%;
+			bottom: 15px;
+		}
 	}
 }
 /* /////////////////////////////////////////////////////////////////////
 Start of Dev Styles
 ///////////////////////////////////////////////////////////////////// */
-
 .page-id-60 .header {
 	background-image: url("/wp-content/themes/vwu-microsite/library/images/campus.jpg");
-
 }
 
 .page-id-61 .header {
 	background-image: url("/wp-content/themes/vwu-microsite/library/images/online.jpg");
-
 }
 
 .home .header {
 	background-image: url("/wp-content/themes/vwu-microsite/library/images/home.jpg");
-
 }
 
 .header {
@@ -53,7 +107,6 @@ Start of Dev Styles
 	// height: 40vw;
 	position: relative;
 	// max-height: 800px;
-
 	&:before {
 		content: '';
 		position: absolute;
@@ -140,13 +193,27 @@ Start of Dev Styles
 
 		.requestInfoButton {
 			// display: none;
+			li {
+				margin: .5em 0;
+			}
 			@include susy-breakpoint($bp-med) {
 				display: block;
+
+				li {
+					margin: 1em 0;
+
+					&:first-of-type {
+						margin-top: .5em;
+					}
+				}
 			}
+
+
 		}
 	}
 }
 // NOTE: REWRITE HEADER STYLES
+
 .header {
 	.flexWrapper {}
 
@@ -154,9 +221,8 @@ Start of Dev Styles
 		flex: 1 1 auto;
 		text-align: center;
 		display: block;
-
 		@include susy-breakpoint($bp-med) {
-		    text-align: left;
+			text-align: left;
 		}
 	}
 
@@ -172,14 +238,15 @@ Start of Dev Styles
 			border-bottom: 2px solid white;
 
 			@include susy-breakpoint($bp-med) {
-			    border: none;
+				border: none;
 			}
+
 			li {
 				text-align: center;
-    		// flex: 1 1 33%;
+				// flex: 1 1 33%;
 				&.requestInfoButton {
 					a {
-						padding: .25em .5em;
+						padding: 0.25em 0.5em;
 					}
 				}
 

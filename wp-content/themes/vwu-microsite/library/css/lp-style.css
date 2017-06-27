@@ -842,6 +842,53 @@ HEADER STYLES
   .header__nav.visible {
     visibility: visible;
     height: auto; }
+  .header__nav .menu-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto; }
+    .header__nav .menu-item:after {
+      background: transparent;
+      content: '';
+      position: absolute;
+      height: 4px;
+      left: 5%;
+      width: 90%;
+      bottom: 15px;
+      transition: .25s ease; }
+    .header__nav .menu-item:hover a {
+      text-decoration: none !important; }
+  .header__nav .menu-item:not(.current-menu-item):hover:after {
+    background: white;
+    background: #00d0f8;
+    content: '';
+    position: absolute;
+    height: 4px;
+    left: 5%;
+    width: 90%;
+    bottom: 15px; }
+  @media (min-width: 840px) {
+    .header__nav .menu-item.requestInfoButton {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0 auto;
+              flex: 1 0 auto;
+      width: 220px; } }
+  .header__nav .menu-item.requestInfoButton:hover:after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    background: white;
+    bottom: 0;
+    width: 100%;
+    left: 0; }
+  .header__nav .current-menu-item:after {
+    background: #00a5c5;
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: 5%;
+    width: 90%;
+    bottom: 15px; }
 
 /* /////////////////////////////////////////////////////////////////////
 Start of Dev Styles
@@ -922,9 +969,15 @@ Start of Dev Styles
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; } }
+    .header .navWrapper .requestInfoButton li {
+      margin: .5em 0; }
     @media (min-width: 840px) {
       .header .navWrapper .requestInfoButton {
-        display: block; } }
+        display: block; }
+        .header .navWrapper .requestInfoButton li {
+          margin: 1em 0; }
+          .header .navWrapper .requestInfoButton li:first-of-type {
+            margin-top: .5em; } }
 
 .header .logo__wrapper {
   -webkit-box-flex: 1;
@@ -957,7 +1010,7 @@ Start of Dev Styles
     .header .navWrapper .nav li {
       text-align: center; }
       .header .navWrapper .nav li.requestInfoButton a {
-        padding: .25em .5em; }
+        padding: 0.25em 0.5em; }
       .header .navWrapper .nav li:hover a {
         text-decoration: underline; }
 

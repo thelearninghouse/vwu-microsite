@@ -48,9 +48,10 @@
 
 											<h4 class="stat__number">
 												<?php echo $number; ?>
-												<span class="stat__text"><?php echo $text; ?></span>
-											</h4>
+												<!-- <span class="stat__text"><?php echo $text; ?></span> -->
 
+											</h4>
+											<span class="stat__text"><?php echo $text; ?></span>
 										</div>
 
 									<?php endwhile; ?>

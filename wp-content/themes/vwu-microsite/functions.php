@@ -3,6 +3,24 @@
 // LOAD BONES CORE (if you remove this, the theme will break)
 require_once( 'library/bones.php' );
 
+
+
+/**
+* tell WP Migrate DB Pro to preserve some options,
+* so that we can stay in dev / test mode
+* @param string $preserved_options
+* @return string
+*/
+add_filter('wpmdb_preserved_options', function($preserved_options) {
+
+    $preserved_options = array_merge($preserved_options, array(
+        'wppusher_token', // don't overwrite wppusher_token
+    ));
+
+    return array_unique($preserved_options);
+});
+
+
 /*********************
 LAUNCH BONES
 Let's get everything up and running.
