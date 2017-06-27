@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 			<div class="content">
-<h1>TEST UPDATE</h1>
+
 				<main class="main-content cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 					<div class="waveTop"></div>
 						<?php include('includes/intro.php') ?>
