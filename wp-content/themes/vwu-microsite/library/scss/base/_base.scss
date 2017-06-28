@@ -43,8 +43,7 @@ Start of Dev Styles
 
 body {
 	color: white;
-  // background: #004778; // Invision
-	background: $someBlue;
+	background: $blue;
 	&:not(p) {
 		font-family: 'Oswald', Cambria, Times New Roman, Times, serif !important;
 		margin: 0;

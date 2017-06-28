@@ -529,7 +529,7 @@ Start of Dev Styles
 ///////////////////////////////////////////////////////////////////// */
 body {
   color: white;
-  background: #003861; }
+  background: #004778; }
   body:not(p) {
     font-family: 'Oswald', Cambria, Times New Roman, Times, serif !important;
     margin: 0; }
@@ -1579,7 +1579,7 @@ HOMEPAGE SPECIFIC STYLES
         flex-basis: 100%; }
 
 .home .about {
-  background: url(../images/about-section-seal.svg) bottom -160px right -160px no-repeat #00294b; }
+  background: url(../images/about-section-seal.svg) bottom -160px right -160px no-repeat #004778; }
 
 /*************************
 PAGE SPECIFIC STYLES
