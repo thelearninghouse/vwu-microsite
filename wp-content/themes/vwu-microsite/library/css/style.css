@@ -1123,6 +1123,8 @@ Start of Dev Styles
 
 .home .header {
   background-image: url("/wp-content/themes/vwu-microsite/library/images/home.jpg"); }
+  .home .header:before {
+    opacity: 0.5; }
 
 .header {
   color: white;
@@ -1478,11 +1480,8 @@ HOMEPAGE SPECIFIC STYLES
     text-align: center; }
 
 .home .degrees {
-  background: linear-gradient(90deg, #00A5C5 0%, #0089A4 0%);
+  background: #617486;
   padding: 3em 0; }
-  @media (min-width: 840px) {
-    .home .degrees {
-      background: linear-gradient(90deg, #00A5C5 50%, #0089A4 50%); } }
   .home .degrees .flexWrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1493,6 +1492,8 @@ HOMEPAGE SPECIFIC STYLES
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap; }
+    .home .degrees .flexWrapper .view:first-child {
+      border-right: 4px solid #00acc8; }
 
 .home .view {
   text-align: center;
@@ -1812,6 +1813,9 @@ PAGE SPECIFIC STYLES
   .page .sect-valu-item:nth-child(5) {
     border-right: solid 1px #FFFFFF;
     border-bottom: solid 1px #FFFFFF; } }
+
+div#requestInfoForm > iframe {
+  border: 0; }
 
 /*********************
 POST STYLES

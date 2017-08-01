@@ -315,6 +315,8 @@ Start of Dev Styles
 
 .home .header {
   background-image: url("/wp-content/themes/vwu-microsite/library/images/home.jpg"); }
+  .home .header:before {
+    opacity: 0.5; }
 
 .header {
   color: white;

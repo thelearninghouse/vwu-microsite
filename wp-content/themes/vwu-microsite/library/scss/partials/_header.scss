@@ -89,6 +89,10 @@ Start of Dev Styles
 
 .home .header {
 	background-image: url("/wp-content/themes/vwu-microsite/library/images/home.jpg");
+
+	&:before {
+		opacity: 0.5;
+	}
 }
 
 .header {

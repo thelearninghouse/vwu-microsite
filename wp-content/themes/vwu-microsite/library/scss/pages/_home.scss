@@ -24,18 +24,17 @@ HOMEPAGE SPECIFIC STYLES
 	}
 
 	.degrees {
-		// background: ;
-		background:linear-gradient(90deg,#00A5C5 0%,#0089A4 0%);
+		background: #617486;
 		padding: 3em 0;
-
-		@include susy-breakpoint($bp-med) {
-			background: linear-gradient(90deg, #00A5C5 50%, #0089A4 50%);
-		}
 
 		.flexWrapper {
 			display: flex;
 			justify-content: space-around;
 			flex-flow: row wrap;
+
+			.view:first-child {
+			    border-right: 4px solid #00acc8;
+			}
 		}
 	}
 

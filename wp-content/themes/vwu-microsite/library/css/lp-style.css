@@ -901,6 +901,8 @@ Start of Dev Styles
 
 .home .header {
   background-image: url("/wp-content/themes/vwu-microsite/library/images/home.jpg"); }
+  .home .header:before {
+    opacity: 0.5; }
 
 .header {
   color: white;
@@ -1297,7 +1299,7 @@ textarea:focus {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  top: 140px; }
+  top: 800px; }
 
 .hero-txt-sm {
   color: #FFFFFF;

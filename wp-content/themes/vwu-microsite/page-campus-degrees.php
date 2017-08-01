@@ -29,7 +29,7 @@
 						<div id="requestInfoForm" class="form__wrapper">
 							<h3 class="form__heading">Life Changes Today.<br>Get Started Now.</h3>
 							<p class="form__description">Required fields are marked with an asterisk <span aria-hidden>(*)</span>.</p>
-							<iframe src="https://vawesleyan.hobsonsradius.com/ssc/iform/I80N7cA7aE3m0x67120CF.ssc" height="900px" width="100%" scrolling="no"></iframe>
+							<iframe src="https://vawesleyan.hobsonsradius.com/ssc/iform/I80N7cA7aE3m0x67120CF.ssc" height="900px" width="100%" scrolling="no" frameborder="0"></iframe>
 						</div>
 					</div>
 					<div class="white">
