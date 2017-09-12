@@ -4,6 +4,49 @@
 		height: 600px;
 		width: 100%;
 	}
+
+	body {
+margin: 0;
+padding: 0;
+}
+
+html, body {
+height:100%;
+}
+
+iframe {
+width: 100%;
+border: 0;
+}
+
+iframe div.section-control .title {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+iframe div.section-control {
+    border: none;
+}
+
+iframe ul.page-child-helper li.page-child-wrapper {
+    margin: 0;
+}
+
+iframe .dynamic-form-required.legend {
+    display: none;
+}
+
+iframe .form-action-bar.bottom {
+    padding: 0 5px;
+    margin: 0;
+}
+
+iframe button.submit.fg-button.ui-state-default.ui-corner-all {
+    width: 100%;
+    display: block;
+    min-width: 100%;
+}
 </style>
 <?php
 	$degrees_args = array(
@@ -29,7 +72,7 @@
 						<div id="requestInfoForm" class="form__wrapper">
 							<h3 class="form__heading">Life Changes Today.<br>Get Started Now.</h3>
 							<p class="form__description">Required fields are marked with an asterisk <span aria-hidden>(*)</span>.</p>
-							<iframe src="https://vawesleyan.hobsonsradius.com/ssc/iform/M00z4GkT7070x6700qx721.ssc" height="1250px" width="100%" scrolling="no" frameborder="0" style="border:none;"></iframe>
+							<iframe src="https://vawesleyan.hobsonsradius.com/ssc/iform/M00z4GkT7070x6700qx721.ssc" height="1000px" width="100%" scrolling="no" frameborder="0" style="border:none;"></iframe>
 						</div>
 					</div>
 					<div class="white">
