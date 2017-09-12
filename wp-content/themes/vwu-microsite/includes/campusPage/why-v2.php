@@ -1,7 +1,7 @@
 <div class="why">
 
 
-  <p><span class="paragraphHeader">We’re Scholarly</span>Our faculty are more than professors; they’re scholars, mentors, and friends. Ninety percent hold a Ph.D. or the highest degree in their field. With small classes – the average class is 13 students and 80% are fewer than 20 students – you’ll find an extremely supportive community ready to help you succeed. VWU offers 33 majors, 30 minors, and seven pre-professional programs.  Undergraduate research is an integral part of the VWU experience. You don’t have to wait until graduate school to pursue in-depth study of a subject near to your heart.</p>
+  <p><span class="paragraphHeader">We’re Scholarly</span>Our faculty are more than professors; they’re scholars, mentors, and friends. Ninety percent hold a Ph.D. or the highest degree in their field. With small classes – the average class is 13 students and 80% are fewer than 20 students – you’ll find an extremely supportive community ready to help you succeed. VWU offers 34 majors, 30 minors, and seven pre-professional programs.  Undergraduate research is an integral part of the VWU experience. You don’t have to wait until graduate school to pursue in-depth study of a subject near to your heart.</p>
 
 
   <p><span class="paragraphHeader">We’re Nationally Recognized and Our Graduates are in Demand</span>Virginia Wesleyan has been selected for inclusion in The Princeton Review’s Best 381 Colleges: 2017 Edition and as a 2016-2017 College of Distinction for excellence in student-focused education. Understandably, given the University’s academic reputation, 92 percent of VWU graduates are employed or in graduate school within a year of leaving campus.</p>
