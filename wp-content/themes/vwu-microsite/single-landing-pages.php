@@ -167,8 +167,10 @@
 					</div>
 
 					<div class="accolades-item">
-						<img src="<?php echo get_template_directory_uri(); ?>/library/images/princeton-review-2016.png" alt="The Princeton Review 2016 - The 380 Best Colleges badge">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/princeton-review-2018.png" alt="The Princeton Review 2018 - The 380 Best Colleges badge">
 					</div>
+
+					<br><br><small>&copy; The Princeton Review 2017, used under license.</small>
 
 			</div>
 
