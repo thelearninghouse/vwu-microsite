@@ -19,30 +19,30 @@ width: 100%;
 border: 0;
 }
 
-iframe div.section-control .title {
+div.section-control .title {
     padding: 0;
     border: 0;
     margin: 0;
 }
 
-iframe div.section-control {
+div.section-control {
     border: none;
 }
 
-iframe ul.page-child-helper li.page-child-wrapper {
+ul.page-child-helper li.page-child-wrapper {
     margin: 0;
 }
 
-iframe .dynamic-form-required.legend {
+.dynamic-form-required.legend {
     display: none;
 }
 
-iframe .form-action-bar.bottom {
+.form-action-bar.bottom {
     padding: 0 5px;
     margin: 0;
 }
 
-iframe button.submit.fg-button.ui-state-default.ui-corner-all {
+button.submit.fg-button.ui-state-default.ui-corner-all {
     width: 100%;
     display: block;
     min-width: 100%;
