@@ -1,53 +1,5 @@
 <?php get_header(); ?>
-<style media="screen">
-	iframe#_dummy {
-		height: 600px;
-		width: 100%;
-	}
 
-	body {
-margin: 0;
-padding: 0;
-}
-
-html, body {
-height:100%;
-}
-
-iframe {
-width: 100%;
-border: 0;
-}
-
-div.section-control .title {
-    padding: 0;
-    border: 0;
-    margin: 0;
-}
-
-div.section-control {
-    border: none;
-}
-
-ul.page-child-helper li.page-child-wrapper {
-    margin: 0;
-}
-
-.dynamic-form-required.legend {
-    display: none;
-}
-
-.form-action-bar.bottom {
-    padding: 0 5px;
-    margin: 0;
-}
-
-button.submit.fg-button.ui-state-default.ui-corner-all {
-    width: 100%;
-    display: block;
-    min-width: 100%;
-}
-</style>
 <?php
 	$degrees_args = array(
 		 'posts_per_page' => 10,
