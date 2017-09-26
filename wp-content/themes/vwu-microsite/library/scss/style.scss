@@ -111,3 +111,16 @@ button.submit.fg-button.ui-state-default.ui-corner-all {
     display: block;
     min-width: 100%;
 }
+
+
+
+.header__nav .menu-item.requestInfoButton:after {
+    display: none;
+    transition: .25s ease;
+}
+
+.header__nav .menu-item.requestInfoButton:hover:after,
+.header__nav .menu-item.requestInfoButton:focus:after {
+    display: block;
+    transition: .25s ease;
+}
