@@ -152,7 +152,7 @@
 		<div class="sidebar-well">
 				<h3>Life changes today.<br />Get started now.</h3>
 				<div id="sidebarStepForm" class="step-form">
-						<script src="http://requestforms.learninghouse.com/form/show/virginia-wesleyan-university/multi-step/705/3534/online.vwu.edu:my:thank-you:request_id" type="text/javascript"></script>
+						<script src="https://requestforms.learninghouse.com/form/show/virginia-wesleyan-university/multi-step/705/3534/online.vwu.edu:my:thank-you:request_id" type="text/javascript"></script>
 				</div>
 
 
