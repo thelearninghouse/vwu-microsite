@@ -19,7 +19,7 @@
 
 					<!-- <p class="footer__copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>. <a href="/privacy-policy/">Privacy Policy</a></p> -->
 					<div class="footer__text">
-						<p>© 2017 Virginia Wesleyan University, 5817 Wesleyan Drive, Virginia Beach, Virginia 23455.</p>
+						<p>© <?php echo date('Y'); ?> Virginia Wesleyan University, 5817 Wesleyan Drive, Virginia Beach, Virginia 23455.</p>
 						<a href="/privacy-policy/">Privacy Policy</a>
 					</div>
 				</div>
