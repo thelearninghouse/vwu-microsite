@@ -3,7 +3,7 @@
 ## Basic Usage
 
 * *Theme Name:* vwu-microsite
-* *Local Site URL:* 
+* *Local Site URL:* vwu-microsite.dev
 * *Landing Pages:* 
 * *Start Date Location:* 
 
