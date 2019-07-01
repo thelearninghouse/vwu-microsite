@@ -263,3 +263,61 @@ Start of Dev Styles
 		}
 	}
 }
+.navWrapper {
+	display:block !important;
+}
+.nav-btn-wrap {
+	display: flex;
+	justify-content: flex-end;
+	width: fit-content;
+	margin-left: auto;
+	font-family: futura-pt,sans-serif;
+	padding: 4px 10px 3px;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: .05rem;
+}
+.nav-btn-wrap a {
+	background: #00A5C5;
+	border-top: 4px solid #00A5C5;
+	border-bottom: 4px solid #00A5C5;
+	color: #fff;
+	position: relative;
+	text-transform: uppercase;
+	transition: all .25s ease;
+	font-size: 1.2em;
+	padding: .25em .5em;
+	text-decoration: none;
+	font-family: Oswald,Cambria,Times New Roman,Times,serif!important;
+	width: 180px;
+	text-align: center;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-btn-wrap .header-phone-btn {
+	margin-left: 1em;
+}
+.nav-btn-wrap a:hover {
+  border-bottom: 4px solid white;
+}
+.header-phone-btn .icon {
+	position: relative;
+	top: 5px;
+}
+@media screen and (max-width: 839px) {
+	.nav-btn-wrap {
+		margin-right: auto;
+		margin-bottom:1em;
+	}
+}
+@media screen and (max-width: 500px) {
+	.nav-btn-wrap {
+		flex-direction: column;
+		align-items: center;
+	}
+	.nav-btn-wrap .header-phone-btn {
+    margin-top: 1em;
+		margin-left: 0;
+	}
+}
