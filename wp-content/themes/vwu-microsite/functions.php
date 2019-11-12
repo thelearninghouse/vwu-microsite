@@ -161,5 +161,13 @@ function enqueue_scripts() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_scripts');
 
+function enqueue_optimizely()
+{
+  $account = 'VWU_virginia';
+
+  wp_register_script('optimizely-js', 'https://cdn.optimizely.com/public/523170811/s/' . $account . '.js', array(), null, false);
+  wp_enqueue_script('optimizely-js');
+}
+add_action('wp_enqueue_scripts', 'enqueue_optimizely', 1);
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>
