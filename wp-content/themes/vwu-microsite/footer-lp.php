@@ -4,7 +4,10 @@
 
 				<div class="wrap cf">
 
-					<p class="footer__copyright">&copy; <?php echo date('Y'); ?> Virginia Wesleyan University, 5817 Wesleyan Drive, Virginia Beach, Virginia 23455. <br /> <a href="/privacy-policy/">Privacy Policy</a></p>
+					<p class="footer__copyright">&copy; <?php echo date('Y'); ?> Virginia Wesleyan University, 5817 Wesleyan Drive, Virginia Beach, Virginia 23455. <br /> 
+					<a target="_blank" href="https://policies.edusites.net/privacyus">Privacy Policy</a>
+					| <a target="_blank" href="https://policies.edusites.net/terms-of-use-us">Terms and Conditions</a>
+					</p>
 
 				</div>
 

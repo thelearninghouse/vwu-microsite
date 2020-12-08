@@ -20,7 +20,9 @@
 					<!-- <p class="footer__copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>. <a href="/privacy-policy/">Privacy Policy</a></p> -->
 					<div class="footer__text">
 						<p>© <?php echo date('Y'); ?> Virginia Wesleyan University, 5817 Wesleyan Drive, Virginia Beach, Virginia 23455.</p>
-						<a href="/privacy-policy/">Privacy Policy</a> | <a class="footerMag__phone ppcphone" href="tel:8444277428" title="Call us now!">(844) 427-7428</a>
+						<a target="_blank" href="https://policies.edusites.net/privacyus">Privacy Policy</a> 
+						| <a target="_blank" href="https://policies.edusites.net/terms-of-use-us">Terms and Conditions</a>
+						| <a class="footerMag__phone ppcphone" href="tel:8444277428" title="Call us now!">(844) 427-7428</a>
 					</div>
 				</div>
 
