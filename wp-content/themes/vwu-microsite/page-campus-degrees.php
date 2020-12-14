@@ -1,5 +1,10 @@
 <?php get_header(); ?>
-
+<style media="screen">
+	iframe#_dummy {
+		height: 600px;
+		width: 100%;
+	}
+</style>
 <?php
 	$degrees_args = array(
 		 'posts_per_page' => 10,
@@ -23,6 +28,7 @@
 
 						<div id="requestInfoForm" class="form__wrapper">
 							<h3 class="form__heading">Life Changes Today.<br>Get Started Now.</h3>
+							<p class="form__description">Required fields are marked with an asterisk <span aria-hidden>(*)</span>.</p>
 							<div id="tlh-form"></div>
 						</div>
 					</div>
