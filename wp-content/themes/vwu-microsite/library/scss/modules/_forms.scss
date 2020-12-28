@@ -119,3 +119,8 @@ legend,
 }
 
 .elp_hidden { display: none; }
+
+/** Override tlh forms **/
+.tlh-form .form-item-sms-consent label {
+  padding-left: 0.75em;
+}
