@@ -780,6 +780,9 @@ legend,
 .tlh-form .form-item-sms-consent label {
   padding-left: 0.75em; }
 
+.tlh-form .form-item-checkbox label a:hover {
+  text-decoration: none; }
+
 /*********************
 LINK STYLES
 *********************/
